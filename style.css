@@ -1,0 +1,256 @@
+/* CSS reset */
+*{
+    margin:0px;
+    padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* CSS Variables */
+
+:root{
+    --navbar-height: 59px;
+
+}
+
+/* navigation bar */
+#navbar{
+    display:flex;
+    align-items:center;
+    /* position: relative; */
+    position: sticky;
+    top:0px;
+}
+#navbar::before{
+    content:"";
+    background-color:#391b00;
+    position:absolute;
+    top: 22px;
+    left: 0px;
+    width: 100%;
+    height: 54%;
+    z-index:-1;
+    opacity:0.7;
+}
+/* navigation bar Logo and Image */
+#logo{
+    margin:5px 4px;
+}
+
+#logo img{
+    margin:10px 7px;
+    width: 60px;
+    height: 60px;
+
+}
+
+
+/* navigation bar List styling */
+
+#navbar ul{
+    display:flex;
+    font-family: 'Anek Devanagari', sans-serif; 
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+#navbar ul li {
+    font-size:1.2rem;
+    list-style: none;
+    
+}
+
+#navbar ul li a{
+    color:#ffffff;
+    text-decoration: none;
+    display:block;
+    /* padding:1px 18px; */
+    padding: 1px 7px;
+    margin: 15px;
+    border-radius: 5px;
+    font-style:bold;
+}
+#navbar ul li a:hover{
+    color:rgb(0, 0, 0);
+    background-color: rgba(255, 212, 170, 0.736);
+}
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 421px;
+}
+#home::before{
+    content:"";
+    background : url('newbg.jpg' )no-repeat center center/cover;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 500px;
+    z-index:-1;
+    opacity:0.3;
+}
+#home h1{
+    color:#000000;
+    text-align:center;  
+
+}
+#home p{
+    color:rgb(0, 0, 0);
+    text-align:center;  
+    font-weight:300;
+    margin: 10px;
+    font-weight: 1000;
+    font-size: 1.1rem;
+    font-family: 'Anek Devanagari', sans-serif; 
+    font-family: 'Roboto Mono', monospace;
+} 
+
+
+
+
+/* Services Section */
+#services{
+    margin:34px;
+    display:flex;
+}
+#services .box{
+    border:3px solid #391b00;  
+    margin: 4px;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: rgba(255, 213, 170, 0.338);
+    
+}
+
+#services .box img{
+    height: 135px;
+    margin: auto;
+    display: block;
+}
+
+
+/* Cients section */
+
+#client-section{
+    height: 151px;
+    position: relative;
+    bottom: 7px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("clientcontact2.jpg");
+    
+    width:100%;
+    height:120%;
+    z-index:-1;
+    opacity:0.4;
+}
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding:20px;
+}
+#clients img{
+    height:50px;
+}
+
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+    top: 23px;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.7;
+    /* background-color:#b8793e; */
+    background:url("newfood_bg.jpg") no-repeat center center/cover
+}
+
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box input , #contact-box textarea{
+    background-color: #391b00c3;
+    width:90%;
+    padding:0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+#contact-box input::placeholder{
+    color:white;
+}
+#contact-box form{
+    width:40%;
+    
+}
+#contact-box label{
+    font-size: 1.2rem;
+}
+
+/* footer */
+footer{
+    background:black;
+    color:#ffffff;
+    padding:2px 20px;
+}
+
+
+
+
+/* Utility Classes */
+.h-primary{
+
+    font-size:2.3rem;
+    padding:12px;
+}
+.h-secondary{
+    font-size:1.3rem;
+    padding:12px;
+}
+.btn{
+    padding:4px 17px;
+    border:2px solid  #391b00;
+    background-color:rgba(255, 212, 170, 0.736);
+    color:rgb(0, 0, 0);
+    margin:15px;
+    font-size: 0.85rem;
+
+}
+.btn:hover{
+    background-color:#b8793e;
+    color:white;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+ 
+}
